@@ -114,7 +114,4 @@ int main(){
     cout<<endl;
 
   }
-
-
-
 }
