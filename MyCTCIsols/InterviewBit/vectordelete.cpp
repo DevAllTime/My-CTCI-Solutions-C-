@@ -9,11 +9,6 @@ int main(){
 
   vector<int>::iterator it = A.begin();
   while(it!=A.end()){
-    cout<<"Before erasing: "<<endl;
-    for(int i=0;i<A.size();i++){
-      cout<<A[i];
-    }
-    cout<<"**\n";
     if((it+1)!=A.end() && *it == *(it+1)){
         vector<int>::iterator idel=it;
         while(idel!=A.end() && *idel==*it){
@@ -22,12 +17,11 @@ int main(){
         idel--;
         idel--;
         A.erase(it,idel);
-        cout<<"Inloop\n";
     }
-    cout<<"Here\n";
+
     it++;
   }
-  cout<<"Mehre\n";
-  //cout<<A.size();
+
+
   return 0;
 }
